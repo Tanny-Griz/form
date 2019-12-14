@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'BebasNeue-Regular';
+    src: url('../fonts/BebasNeue-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/fon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 60px;
+}
+
+.test-form {
+    max-width: 444px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 35px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 42px;
+    font-family: 'BebasNeue-Regular';
+}
+
+input,
+textarea {
+    padding: 18px 16px;
+    width: 100%;
+    margin-bottom: 25px;
+    background: #f9f6f0;
+    color: #858585;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid #f9f6f0;
+    border-radius: 3px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+
+.selectric {
+    border: 1px solid #f9f6f0;
+}
+
+.selectric .button {
+    background: #f9f6f0;
+    width: 56px;
+    height: 56px;
+}
+
+.selectricWrapper {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.selectricItems,
+.selectric p,
+.selectric .label {
+    background: #f9f6f0;
+    color: #858585;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+
+.selectric .label {
+    padding: 18px 16px;
+    border: 1px solid #f9f6f0;
+    margin: 0 56px 0 0;
+}
+
+.selectricHover .selectric {
+    border-color: #f9f6f0;
+}
+
+.checkbox-holder {
+    font-size: 0;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox-item {
+    display: inline-block;
+    width: 50%;
+}
+
+input[type="checkbox"]+span {
+    display: inline-block;
+    margin-bottom: 25px;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+input[type="checkbox"]+span:before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    border: 2px solid #eeebe6;
+    border-radius: 1px;
+    vertical-align: middle;
+}
+
+input[type="checkbox"]:checked+span:before {
+    content: "\2714";
+    text-align: center;
+    border: 2px solid #eca22e;
+    color: #eca22e;
+    border-radius: 2px;
+}
+
+.line:after {
+    content: '';
+    display: inline-block;
+    background-color: #eeebe6;
+    margin-bottom: 25px;
+    height: 1px;
+    width: 100%;
+}
+
+.radio-holder {
+    font-size: 0;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.radio-item {
+    display: inline-block;
+    width: 50%;
+}
+
+input[type="radio"]+span {
+    display: inline-block;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+input[type="radio"]+span:before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 2px solid #eeebe6;
+    border-radius: 50px;
+    vertical-align: middle;
+}
+
+input[type="radio"]:checked+span:before {
+    content: "";
+    text-align: center;
+    color: #eca22e;
+    background-color: #eca22e;
+    border-radius: 50px;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    display: block;
+    width: 55%;
+    padding: 15px;
+    margin: 0 auto;
+    border: 2px;
+    border-radius: 3px;
+    background-color: #eca22e;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
